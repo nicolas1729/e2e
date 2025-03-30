@@ -1,0 +1,24 @@
+{
+  "name": "nighteai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nightwatch .\\nightwatch\\github.ts",
+    "watch": "tsc -w",
+    "selenium": "chromedriver --port=9515",
+    "test": "nightwatch",
+    "debug": "node --nolazy --inspect-brk=9229 node_modules/nightwatch/bin/runner.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@swc/core": "^1.11.13",
+    "nightwatch": "^3.12.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2",
+    "@types/nightwatch": "^2.3.32"
+  }
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="2">
+
+  <testsuite name="nightwatch.github" id="nightwatch.github"
+    errors="0" failures="1" hostname="" package="github" skipped="1"
+    tests="2" time="7.174" timestamp="">
+  
+    <testcase name="Github Title test" classname="nightwatch.github" time="1.014" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Github search for nightwatch repository" classname="nightwatch.github" time="6.157" assertions="3">
+
+    
+
+      <failure message="Timed out while waiting for element &lt;div[data-testid=&#34;results-list&#34;]:first-child&gt; to be present for 5000 milliseconds. - expected &#34;visible&#34; but got: &#34;not found&#34; (5095ms)">    at Object.Github search for nightwatch repository (C:\dev\e2e\nightEAI\nightwatch\github.ts:23:8)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+    
+    <testcase
+      name="Github login with fake credentials" classname="nightwatch.github">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

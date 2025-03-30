@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="2">
+
+  <testsuite name="nightwatch.github" id="nightwatch.github"
+    errors="0" failures="1" hostname="" package="github" skipped="0"
+    tests="2" time="1.142" timestamp="">
+  
+    <testcase name="Github Title test" classname="nightwatch.github" time="1.059" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Github login with fake credentials" classname="nightwatch.github" time="0.08200" assertions="1">  <failure message="Error while running &#34;login&#34; command: [TypeError] Class extends value #&lt;Object&gt; is not a constructor or null">TypeError: Error while running &#34;login&#34; command: [TypeError] Class extends value #&lt;Object&gt; is not a constructor or null
+    at new Promise (&lt;anonymous&gt;)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
