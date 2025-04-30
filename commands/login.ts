@@ -1,6 +1,6 @@
-import { NightwatchAPI, NightwatchBrowser } from "nightwatch";
+import { NightwatchAPI } from "nightwatch";
 
-export function wplogin (app: NightwatchAPI,  callback: Function) {
+function login (callback: Function) {
     return app
         .url('https://github.com/login')
         .clearValue('#login_field')
@@ -9,3 +9,5 @@ export function wplogin (app: NightwatchAPI,  callback: Function) {
         .setValue('#password', 'testpassword')
         .waitForElementVisible('[value=\'Sign in\']')
 }
+
+exports.command = login;

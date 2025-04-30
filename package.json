@@ -16,9 +16,14 @@
   "type": "commonjs",
   "devDependencies": {
     "@swc/core": "^1.11.13",
+    "@types/nightwatch": "^2.3.32",
     "nightwatch": "^3.12.1",
     "ts-node": "^10.9.2",
-    "typescript": "^5.8.2",
-    "@types/nightwatch": "^2.3.32"
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "chromedriver": "^135.0.1",
+    "geckodriver": "^5.0.0",
+    "selenium-server": "^3.141.59"
   }
 }

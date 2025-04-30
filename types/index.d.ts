@@ -4,12 +4,13 @@ export {};
 // merge interfaces with nightwatch types
 declare module "nightwatch" {
     export interface NightwatchCustomAssertions {
-        screenshotEquals(this: NW.NightwatchBrowser, filename: string, tolerance?: number, callback?: Function): NW.NightwatchBrowser;
+        screenshotEquals(this: NW.NightwatchAPI, filename: string, tolerance?: number, callback?: Function): NW.NightwatchAPI;
     }
 
     export interface NightwatchCustomCommands {
-        wplogin(this: NW.NightwatchBrowser, callback?: Function): NW.NightwatchBrowser;
-        login(this: NW.NightwatchBrowser, callback?: Function): NW.NightwatchBrowser;
-        compareScreenshot(this: NW.NightwatchBrowser, filename: string, tolerance?: number, callback?: Function): NW.NightwatchBrowser
+        wplogin(callback?: Function): NW.NightwatchAPI;
+        login(callback?: Function): NW.NightwatchAPI;
+        logInfo(textToLog:string, callback?: Function): NW.NightwatchAPI
+        compareScreenshot(this: NW.NightwatchAPI, filename: string, tolerance?: number, callback?: Function): NW.NightwatchAPI
     }
 }

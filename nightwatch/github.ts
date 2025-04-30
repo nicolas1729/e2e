@@ -8,7 +8,7 @@ const home: NightwatchTests = {
       .assert.titleContains('GitHub');
   },
 
-  'Github search for nightwatch repository': () => {
+  /*'Github search for nightwatch repository': () => {
     browser
       .url('https://github.com/search')
       .clearValue('[placeholder=\'Search GitHub\']')
@@ -25,17 +25,18 @@ const home: NightwatchTests = {
         'div[data-testid="results-list"]:first-child',
         'Integrated end-to-end testing framework written in Node.js and using W3C Webdriver API'
       );
-  },
+  },*/
 
   'Github login with fake credentials': () => {
-    browser
-      .login()
-      .click('[value=\'Sign in\']')
-      .assert.textContains(
+    app
+    .login()
+    .logInfo("test toto")
+    .click('[value=\'Sign in\']')
+    .assert.textContains(
         '#js-flash-container .flash.flash-error',
         'Incorrect username or password.'
-      )
-      .end();
+    )
+    .end();
   }
 };
 

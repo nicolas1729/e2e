@@ -31,7 +31,11 @@ module.exports = {
   // See https://nightwatchjs.org/guide/concepts/test-globals.html
   globals_path: '',
   
-  webdriver: {},
+  webdriver: {
+    start_process: true,
+    //server_path: './bin/geckodriver.exe',//'./node_modules/.bin/geckodriver',
+    server_path: './node_modules/.bin/chromedriver',
+  },
 
   test_workers: {
     enabled: true
@@ -43,18 +47,19 @@ module.exports = {
       launch_url: 'http://localhost',
 
       screenshots: {
-        enabled: false,
+        enabled: true,
         path: 'screens',
         on_failure: true
       },
 
-      desiredCapabilities: {
-        browserName: 'firefox'
-      },
+      /*desiredCapabilities: {
+        browserName: 'chrome'
+      },*/
       
       webdriver: {
         start_process: true,
-        server_path: ''
+        //server_path: './node_modules/.bin/chromedriver',
+        server_path: './bin/geckodriver.exe',
       },
       
     },
@@ -74,7 +79,7 @@ module.exports = {
       },
       webdriver: {
         start_process: true,
-        server_path: '',
+        server_path: './bin/geckodriver.exe',
         cli_args: [
           // very verbose geckodriver logs
           // '-vv'
